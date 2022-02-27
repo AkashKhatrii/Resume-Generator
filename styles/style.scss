@@ -10,7 +10,7 @@
 .header {
   position: relative;
   min-height: 80vh;
-  background-color: aquamarine;
+  background-color: #0077b6;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -34,7 +34,7 @@
     padding: 7px 14px;
     font-size: 1.2rem;
     color: white;
-    background-color: aquamarine;
+    background-color: #0077b6;
     border: 2px solid white;
     border-radius: 4px;
     cursor: pointer;
@@ -61,4 +61,126 @@
 
 .custom-shape-divider-bottom-1645885113 .shape-fill {
   fill: #ffffff;
+}
+
+main {
+  margin-top: 20vh;
+  min-height: 100vh;
+
+  #details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .formContainer {
+      width: 900px;
+      height: auto;
+      background-color: white;
+      border-radius: 10px;
+      padding: 10px 20px;
+      box-shadow: 8px 10px 14px -8px rgba(0, 0, 0, 0.75);
+
+      form {
+        display: flex;
+        flex-direction: column;
+        .personal {
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 50px;
+
+          .heading {
+            margin-bottom: 15px;
+          }
+          .data {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            row-gap: 20px;
+            column-gap: 30px;
+
+            .formInput {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+
+              label {
+                margin-bottom: 7px;
+              }
+
+              input {
+                width: 90%;
+                outline: none;
+                border: none;
+                border-bottom: 1px solid black;
+                padding: 5px 7px;
+                font-size: 1rem;
+              }
+            }
+          }
+        }
+
+        .education {
+          display: flex;
+          flex-direction: column;
+
+          .heading {
+            margin-bottom: 15px;
+          }
+
+          #educationData {
+            display: flex;
+            flex-direction: column;
+
+            .educationEntry {
+              margin-bottom: 20px;
+            }
+
+            .formInput {
+              display: flex;
+              flex-direction: column;
+              margin-bottom: 10px;
+
+              label {
+                margin-bottom: 7px;
+              }
+
+              input {
+                width: 90%;
+                outline: none;
+                border: none;
+                border-bottom: 1px solid black;
+                padding: 5px 7px;
+                font-size: 1rem;
+                margin-bottom: 7px;
+              }
+            }
+          }
+          button {
+            padding: 5px 7px;
+            font-size: 1rem;
+            border-radius: 5px;
+            border: 1px solid #00b4d8;
+            background-color: white;
+            color: #00b4d8;
+            transition: all 0.5s ease-in;
+            margin-bottom: 20px;
+
+            &:hover {
+              background-color: #00b4d8;
+              color: white;
+            }
+          }
+        }
+
+        button {
+          width: 30%;
+          padding: 5px 7px;
+          font-size: 1rem;
+          border-radius: 5px;
+          border: 1px solid #00b4d8;
+          background-color: white;
+          color: #00b4d8;
+        }
+      }
+    }
+  }
 }
